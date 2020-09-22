@@ -1,0 +1,512 @@
+@charset "UTF-8";
+body
+	{
+		font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+	}
+
+@media (min-width: 768px) {
+  .container {
+    width: 700px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 900px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1000px;
+  }
+}
+
+.mt20 {
+	margin-top: 20px;
+}
+
+.mt30 {
+	margin-top: 30px;
+}
+
+/* heading section */
+h1,h2,h3,h4 {
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 40px;
+}
+h1 {
+  font-size: 90px;
+}
+
+/* images retina */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* button section */
+.btn {
+  background: transparent;
+  border: 2px solid #fff;
+  border-radius: 0px;
+  box-shadow: none;
+  color: #fff;
+  padding: 12px 18px;
+  font-size: 13px;
+  font-weight: bold;
+  transition: all 0.4s ease-in;
+}
+.btn:hover {
+  background: #009988;
+  border-color: transparent;
+}
+
+.btn-social {
+  height: 2.5rem;
+  width: 2.5rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border-radius: 100%;
+}
+#mainNav {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: #fff;
+}
+#mainNav .navbar-toggler {
+  padding: 0.75rem;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 0.75rem;
+  color: #000000;
+  text-transform: uppercase;
+  background-color: #fff;
+  border: 1px solid black;
+}
+
+#mainNav .navbar-brand {
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 700;
+  letter-spacing: 0.0625em;
+  text-transform: uppercase;
+}
+#mainNav .navbar-brand img {
+  height: 1.5rem;
+}
+#mainNav .navbar-nav .nav-item .nav-link {
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 0.95rem;
+  letter-spacing: 0.0625em;
+}
+#mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
+  color: #000000;
+  font-style: italic;
+}
+
+@media (min-width: 992px) {
+  #mainNav {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    border: none;
+    background-color: #fff;
+    transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
+  }
+  #mainNav .navbar-brand {
+    font-size: 1.5em;
+    transition: font-size 0.3s ease-in-out;
+  }
+  #mainNav .navbar-brand img {
+    height: 2rem;
+    transition: height 0.3s ease-in-out;
+  }
+  #mainNav.navbar-shrink {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: #fff;
+  }
+  #mainNav.navbar-shrink .navbar-brand {
+    font-size: 1.25em;
+  }
+  #mainNav.navbar-shrink .navbar-brand svg,
+#mainNav.navbar-shrink .navbar-brand img {
+    height: 1.5rem;
+  }
+  #mainNav .navbar-nav .nav-item {
+    margin-right: 1rem;
+  }
+  #mainNav .navbar-nav .nav-item:last-child {
+    margin-right: 0;
+  }
+}
+
+.footer {
+  text-align: center;
+  font-size: 0.9rem;
+  position: relative;
+   bottom:0;
+   width: 100%;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+h1 #moto {
+  font-family: 'Open Sans', sans-serif !;
+}
+#home {
+
+  background: url('../assets/img/bg2.jpg') no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 180px;
+  padding-bottom: 100px;
+  height: 90vh;
+  min-height: 350px;
+}
+
+#home .container {
+  text-align: center;
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  height: 50%;
+}
+fieldset{
+  text-align: center;
+  padding: 4%;
+}
+@media screen and (max-width: 600px)  {
+
+   #home .container {
+     text-align: center;
+     color: white;
+     background: rgba(0, 0, 0, 0.5);
+     height: 70%;
+   }
+
+   h1{
+     font-size: 70px;
+   }
+   h2{
+     font-size: 35px;
+   }
+   }
+@media screen and (min-width: 600px)  {
+       .mobile-break { display: none; }
+   }
+/* divider section */
+.divider {
+  color: #fff;
+  text-align: center;
+}
+.divider .fa {
+  border: 2px solid #fff;
+  border-radius: 50%;
+  font-size: 32px;
+  width: 80px;
+  height: 80px;
+  line-height: 76px;
+  text-transform: capitalize;
+}
+.divider h2 {
+  padding-bottom: 4px;
+}
+.divider .divider-wrapper {
+  padding: 40px 20px 40px 20px;
+  position: relative;
+  bottom: 40px;
+  transition: all 0.4s ease-in;
+}
+.divider .divider-wrapper:hover {
+  bottom: 60px;
+  cursor: pointer;
+}
+.divider .divider-one {
+  background: #c14000;
+}
+.divider .divider-two {
+  background: #009988;
+}
+.divider .divider-three {
+  background: #ffa500;
+}
+
+/* about section */
+#about-header {
+  background: url('../images/about-header.jpg') no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 500px;
+  padding-top: 160px;
+}
+#about {
+  padding-top: 60px;
+}
+
+#about .col-md-6 {
+  padding: 0;
+  margin: 0;
+}
+#about .about-des {
+  padding-left: 30px;
+  padding-right: 20px;
+  background: #fff;
+}
+#about .btn {
+  color: #000;
+  background: #fff;
+  border: 1px solid #000;
+  display: inline-block;
+  text-align: center;
+}
+#about .btn:hover{
+  color: #fff;
+  background: #000;
+  border: 1px solid #000;
+}
+/* portfolio section */
+#portfolio-header {
+  background: url('../images/portfolio-header.jpg') no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 500px;
+  padding-top: 160px;
+}
+#portfolio {
+  text-align: center;
+  padding-top: 80px;
+  padding-bottom: 60px;
+  }
+#portfolio h2 {
+  padding-bottom: 20px;
+}
+#portfolio .col-md-4,
+#portfolio .col-md-3 {
+  padding: 0;
+  margin: 0;
+}
+#portfolio img {
+  width: 100%;
+  transition: all 0.4s ease-in;
+  opacity: 0.8;
+}
+#portfolio img:hover {
+  opacity: 1;
+}
+#portfolio .btn {
+  margin-top: 30px;
+}
+
+
+
+.container .p-5 .heading-div{
+  height:40%;
+  background: url('../assets/img/bg1.jpg');
+  margin-top: 5%;
+}
+
+.container .p-5 .heading-div .page-heading{
+  padding:4%;
+  background: rgba(255, 255, 255, 0.5);
+}
+/* Animation */
+.container .animation{
+  white-space: nowrap;
+  overflow: hidden;
+  text-align: center;
+  width: 100%;
+  animation: title 6s steps(30, end);
+}
+
+@keyframes title{
+  from { width: 0; opacity: 0.0;}
+  to { opacity: 1.0; }
+}
+#contact-us {
+  background-color: #fff;
+  text-align: left;
+  padding-bottom: 100px;
+}
+
+#contact-us .section-heading {
+  color: #121212;
+}
+
+
+#contact-us .pop-button {
+  margin-top: 30px;
+}
+
+#contact input {
+  border-radius: 0px;
+  padding-left: 15px;
+  font-size: 15px;
+  font-weight: 300;
+  color: #7a7a7a;
+  background-color: rgba(0, 0, 0, 0.03);
+  outline: none;
+  border: none;
+  box-shadow: none;
+  line-height: 50px;
+  height: 50px;
+  width: 100%;
+  margin-bottom: 30px;
+  border: 1px solid #2B2B2B;
+}
+
+#contact textarea {
+  border-radius: 0px;
+  padding-left: 15px;
+  padding-top: 10px;
+  font-size: 15px;
+  font-weight: 300;
+  color: #232323;
+  background-color: rgba(0, 0, 0, 0.03);
+  outline: none;
+  border: none;
+  box-shadow: none;
+  height: 165px;
+  max-height: 220px;
+  width: 100%;
+  max-width: 100%;
+  border: 1px solid #2B2B2B;
+}
+
+#contact button {
+    padding: 13px 20px;
+  letter-spacing: 0.5px;
+  color: #000;
+  background: #fff;
+  border: 1px solid #000;
+  display: inline-block;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 0px;
+}
+#contact button:hover{
+  color: #fff;
+  background: #000;
+  border: 1px solid #000;
+}
+.section-heading {
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 60px;
+}
+
+.section-heading h4 {
+  margin-top: 0px;
+  font-size: 28px;
+  text-transform: uppercase;
+  font-weight: 300;
+  color: #121212;
+}
+
+.section-heading p {
+  color: #7a7a7a;
+  padding: 0px 25%;
+}
+/* Produts.html */
+
+.with-arrow .nav-link.active {
+  position: relative;
+}
+
+.with-arrow .nav-link.active::after {
+  content: '';
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid #2b90d9;
+  position: absolute;
+  bottom: -6px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+}
+
+/* lined tabs */
+
+.lined .nav-link {
+  border: none;
+  border-bottom: 3px solid transparent;
+}
+
+.lined .nav-link:hover {
+  border: none;
+  border-bottom: 3px solid transparent;
+}
+
+.lined .nav-link.active {
+  background: none;
+  color: #555;
+  border-color: #2b90d9;
+}
+
+
+.nav-pills .nav-link {
+  color: #555;
+}
+.text-uppercase {
+  letter-spacing: 0.1em;
+}
+.card img{
+  height:250px;
+  width:100%;
+}
+
+.item{
+  padding-left:5px;
+  padding-right:5px;
+}
+.item-card{
+  transition:0.5s;
+  cursor:pointer;
+}
+.item-card-title{
+  font-size:15px;
+  transition:1s;
+  cursor:pointer;
+}
+.item-card-title i{
+  font-size:15px;
+  transition:1s;
+  cursor:pointer;
+  color:#ffa710
+}
+.card-title i:hover{
+  transform: scale(1.25) rotate(100deg);
+  color:#18d4ca;
+
+}
+.card:hover{
+  transform: scale(1.05);
+  box-shadow: 10px 10px 15px rgba(0,0,0,0.3);
+}
+.card-text{
+  height:80px;
+}
+
+.card::before, .card::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: scale3d(0, 0, 1);
+  transition: transform .3s ease-out 0s;
+  background: rgba(255, 255, 255, 0.1);
+  content: '';
+  pointer-events: none;
+}
+.card::before {
+  transform-origin: left top;
+}
+.card::after {
+  transform-origin: right bottom;
+}
+.card:hover::before, .card:hover::after, .card:focus::before, .card:focus::after {
+  transform: scale3d(1, 1, 1);
+}
